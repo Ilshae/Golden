@@ -14,13 +14,20 @@
     src:url("../fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: RobotoSlab;
+    src:url("../fonts/RobotoSlab-VariableFont_wght");
+}
+
 
 /* Variables */
 $font-one: 'Wisdom', serif;
 $font-two: 'Montserrat', sans-serif;
 $font-three: 'Droid', serif;
+$font-four: 'RobotoSlab', serif;
 $color-one: #fed136;
 $color-two: #fff;
+$color-three: #929292;
 
 /* Global */
 body{
@@ -31,12 +38,10 @@ body{
 
 .page-title{
     font-family: $font-two;
-    font-size: 75px;
     text-transform: uppercase;
 }
 
 .page-subtitle{
-    font-size: 40px;
     font-family: $font-three;
     font-style: italic;
 }
@@ -70,7 +75,6 @@ nav{
     align-items: baseline;
     justify-content: space-around;
     padding-top: 45px;
-    background-color: transparent;
 }
 
 .navbar-brand {
@@ -105,7 +109,7 @@ nav{
 /* Hero */
 .hero-background{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -137,4 +141,56 @@ nav{
     text-align: center;
     padding: 20px;
 }
-        
+
+.hero-inner h2{
+    margin: 0 0 50px 0; 
+    font-size: 40px;
+}
+
+.hero-inner h1{
+    margin: 0 0 60px 0;
+    font-size: 75px;
+}
+    
+/* Services */
+.services{
+    border-color: $color-two;
+    padding: 120px 5px;
+}
+
+.services .row{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.services header{
+    margin: 80px 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.services header h1{
+    font-size: 40px;
+}
+
+.services header p{
+    font-size: 16px;
+    color: $color-three;
+}
+.tile i{
+    color: $color-one;
+}
+
+.tile h3{
+    font-family: $font-two;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tile p{
+    color: $color-three;
+    font-size: 14px;
+    font-family: $font-four;
+}
