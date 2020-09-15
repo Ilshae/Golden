@@ -250,3 +250,15 @@ nav{
     font-family: $font-four;
     font-style: italic;
 }
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    min-height: 120px;
+    align-items: center; 
+}
+
+footer div p{
+    font-family: $font-two;
+    font-size: 14px;
+}

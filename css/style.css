@@ -252,4 +252,20 @@ nav {
   font-family: "RobotoSlab", serif;
   font-style: italic;
 }
+
+/* Footer */
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  min-height: 120px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+footer div p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */
