@@ -1,0 +1,140 @@
+/* Fonts */
+@font-face {
+    font-family: Droid;
+    src:url("../fonts/DroidSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: Wisdom;
+    src:url("../fonts/Wisdom Script AJ.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src:url("../fonts/Montserrat-Regular.ttf");
+}
+
+
+/* Variables */
+$font-one: 'Wisdom', serif;
+$font-two: 'Montserrat', sans-serif;
+$font-three: 'Droid', serif;
+$color-one: #fed136;
+$color-two: #fff;
+
+/* Global */
+body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title{
+    font-family: $font-two;
+    font-size: 75px;
+    text-transform: uppercase;
+}
+
+.page-subtitle{
+    font-size: 40px;
+    font-family: $font-three;
+    font-style: italic;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 5px;
+    font-family: $font-two;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-one{
+    background-color: $color-one;
+    color: $color-two;
+    width: 240px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    margin: 24px auto 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-top: 45px;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: $font-one;
+    color: $color-one;
+    font-size: 26px;
+}
+  
+.navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: $font-two;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.navbar-link{
+    text-decoration: none;
+    margin-left: 40px;
+    color: $color-two;
+}
+
+/* Hero */
+.hero-background{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    background-image: url("../images/hero_background.jpg");
+    background-size: cover;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+.hero {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+  
+.hero-inner {
+    color: $color-two;
+    text-align: center;
+    padding: 20px;
+}
+        
